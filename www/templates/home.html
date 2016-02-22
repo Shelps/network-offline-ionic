@@ -1,0 +1,11 @@
+<ion-view view-title="Home">
+  <ion-content>
+    <button ng-click="vm.solicitar()" type="button" class="button button-full button-positive" name="button">Listar</button>
+    <button ng-click="vm.proxima()" type="button" class="button button-full button-assertive" name="button">Page01</button>
+    <ion-list>
+      <ion-item ng-repeat="user in vm.users">
+        Hello, {{user.name}}!
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
