@@ -23,7 +23,7 @@ angular.module('starter', ['ionic','ngCordova'])
     if($cordovaNetwork.isOffline()){
       $ionicPopup.alert({
         title:"Atenção",
-        template:"Sem conexão"
+        template:"Sem conexão com a internet"
       }).then(function(){
         ionic.Platform.exitApp();
       });
