@@ -6,8 +6,7 @@
 
       inteceptor.$inject = ['$cordovaNetwork'];
 
-      function inteceptor($cordovaNetwork,$ionicPopup){
-        console.log('Entrou factory');
+      function inteceptor($cordovaNetwork){
         return {
           request : request,
           response: response
@@ -24,7 +23,6 @@
         }
 
         function response(config){
-          console.log('Resposta');
           if(window.Connection){
             if($cordovaNetwork.isOffline()){
               alert('Sem conexão com internet');
